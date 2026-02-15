@@ -1,0 +1,1 @@
+No pudimos verificar la propiedad de blast-network.blast. No pudimos encontrar el registro TXT. Tenga en cuenta que los cambios de DNS pueden tardar hasta 24 horas.

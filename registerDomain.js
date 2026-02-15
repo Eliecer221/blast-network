@@ -73,6 +73,7 @@ async function registerDomain(domain, owner, years = 1) {
                 domain: domain,
                 owner: owner,
                 registrar: 'BlastDomainRegistry',
+                website: 'https://eliecer221.github.io/blast-network',
                 registrationDate: new Date().toISOString(),
                 expirationDate: new Date(Date.now() + (31536000000 * years)).toISOString(),
                 transactionHash: txHash,
