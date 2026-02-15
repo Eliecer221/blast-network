@@ -1,0 +1,63 @@
+{
+  "config": {
+    "chainId": 8888,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0,
+    "berlinBlock": 0,
+    "londonBlock": 0,
+    "blastNetwork": {
+      "enabled": true,
+      "version": "1.0.0",
+      "creator": "Eliecer Jose Depablos Miquilena",
+      "creatorEmail": "eliecerdepablos@gmail.com",
+      "networkName": "BLAST",
+      "symbol": "BLAST",
+      "decimals": 18,
+      "maxSupply": "42000000000000000000000000",
+      "blockReward": "6250000000000000000",
+      "blockTime": 15,
+      "halvingInterval": 210000
+    },
+    "ethash": {},
+    "clique": {
+      "period": 15,
+      "epoch": 30000
+    }
+  },
+  "difficulty": "0x1",
+  "gasLimit": "0x1C9C380",
+  "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000BLAST_GENESIS_BY_ELIECER_JOSE_DEPABLOS_MIQUILENA_eliecerdepablos@gmail.com0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "alloc": {
+    "0xBLAST0000000000000000000000000000000001": {
+      "balance": "21000000000000000000000000",
+      "comment": "Master Wallet - Eliecer Jose Depablos Miquilena"
+    },
+    "0xBLAST0000000000000000000000000000000002": {
+      "balance": "0",
+      "comment": "Mining Rewards Pool"
+    },
+    "0xBLAST0000000000000000000000000000000003": {
+      "balance": "0",
+      "comment": "Staking Rewards Pool"
+    },
+    "0xBLAST0000000000000000000000000000000004": {
+      "balance": "0",
+      "comment": "Development Fund"
+    },
+    "0xBLAST0000000000000000000000000000000005": {
+      "balance": "0",
+      "comment": "Domain Registration Pool"
+    }
+  },
+  "coinbase": "0x0000000000000000000000000000000000000000",
+  "timestamp": "0x678D0000",
+  "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "nonce": "0x0000000000000042",
+  "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+}

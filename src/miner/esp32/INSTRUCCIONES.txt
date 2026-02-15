@@ -1,0 +1,45 @@
+================================================================
+   GUÍA DE MINERÍA BLAST NETWORK - ESP32 EDITION
+================================================================
+
+Este paquete te permite convertir tu placa ESP32 en un nodo minero para la red BLAST.
+
+--- REQUISITOS PREVIOS ---
+1.  Tener instalado Arduino IDE (https://www.arduino.cc/en/software)
+2.  Tener una placa ESP32 (DevKit V1, NodeMCU, etc.)
+3.  Cable USB de datos.
+
+--- INSTALACIÓN DE LIBRERÍAS ---
+En Arduino IDE, ve a "Programa" -> "Incluir Librería" -> "Gestionar Librerías..."
+Busca e instala las siguientes:
+1.  "ArduinoJson" (por Benoit Blanchon) - Para leer los datos del nodo.
+2.  "Keccak256" (por spaniakos o similar) - Para el algoritmo de hash.
+
+--- CONFIGURACIÓN ---
+1.  Abre el archivo `BlastMinerESP32.ino`.
+2.  Busca las líneas:
+    const char* WIFI_SSID = "TU_WIFI_NOMBRE";
+    const char* WIFI_PASS = "TU_WIFI_PASSWORD";
+    String SERVER_URL = "http://192.168.1.X:8545";
+3.  Pon el nombre y contraseña de tu WiFi.
+4.  En SERVER_URL, cambia `192.168.1.X` por la IP LOCAL de tu computadora donde corre el servidor BLAST.
+    (Para ver tu IP, abre CMD en la PC y escribe `ipconfig`).
+
+--- CARGAR EL CÓDIGO ---
+1.  Conecta el ESP32 por USB.
+2.  Selecciona tu placa en "Herramientas" -> "Placa" -> "ESP32 Dev Module".
+3.  Selecciona el puerto COM correcto.
+4.  Dale al botón de flecha (Subir).
+
+--- MINANDO ---
+Abre el Monitor Serie (a 115200 baudios). Verás:
+> [BLAST] Conectando a WiFi...
+> [BLAST] WiFi Conectado!
+> [BLAST] Nuevo trabajo recibido. Bloque: 125
+> Hashrate: 650 H/s ...
+
+¡Si tienes suerte, verás "BLOQUE ENVIADO Y ACEPTADO"!
+
+================================================================
+   BLAST NETWORK TEAM - 2026
+================================================================

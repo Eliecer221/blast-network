@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Hexagon Background -->
+  <path d="M100 20 L170 60 L170 140 L100 180 L30 140 L30 60 Z" 
+        fill="none" stroke="url(#gold)" stroke-width="4" filter="url(#glow)" />
+  
+  <!-- Inner Circuit Pattern -->
+  <path d="M100 30 L100 50 M100 150 L100 170 M30 60 L50 70 M150 70 L170 60" 
+        stroke="url(#gold)" stroke-width="2" opacity="0.5" />
+        
+  <!-- Stylized 'B' -->
+  <path d="M70 60 L100 60 L120 80 L100 100 L120 120 L100 140 L70 140 Z M70 60 L70 140" 
+        fill="none" stroke="url(#gold)" stroke-width="8" stroke-linejoin="round" />
+  
+  <!-- Center Core -->
+  <circle cx="95" cy="100" r="5" fill="#fff" filter="url(#glow)" />
+</svg>

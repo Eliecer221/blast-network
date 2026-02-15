@@ -1,0 +1,29 @@
+{
+  "name": "blast-wallet-pendrive",
+  "version": "1.0.0",
+  "description": "BLAST Wallet - Trezor Edition Portable",
+  "main": "src/wallet/trezorWallet.js",
+  "bin": {
+    "blast": "src/wallet/trezorWallet.js"
+  },
+  "scripts": {
+    "start": "node src/wallet/trezorWallet.js",
+    "wallet": "node src/wallet/trezorWallet.js",
+    "basic": "node src/wallet/hardwareWallet.js",
+    "portable": "node src/wallet/portable.js",
+    "rpc": "node src/rpc/server.js",
+    "install": "npm install --production"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "secp256k1": "^4.0.3",
+    "keccak": "^3.0.3",
+    "uuid": "^9.0.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0"
+  },
+  "keywords": ["blockchain", "wallet", "crypto", "blast"],
+  "author": "Eliecer Jose Depablos Miquilena",
+  "license": "MIT"
+}

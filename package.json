@@ -1,0 +1,32 @@
+{
+  "name": "blast-network",
+  "version": "1.0.0",
+  "description": "BLAST Network - Blockchain Layer 1 con PoW+PoS Híbrido",
+  "main": "src/blockchain/index.js",
+  "scripts": {
+    "start": "node src/blockchain/index.js",
+    "wallet": "node src/wallet/cli.js",
+    "miner": "node src/miner/index.js",
+    "rpc": "node src/rpc/server.js",
+    "explorer": "node src/explorer/server.js",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "secp256k1": "^4.0.3",
+    "keccak": "^3.0.3",
+    "uuid": "^9.0.1",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.53.0"
+  },
+  "author": "Eliecer Jose Depablos Miquilena",
+  "license": "MIT"
+}
