@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLAST Network | Cybernetic Mainnet</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Optional for icons -->
+</head>
+
+<body>
+    <!-- Cybernetic Background Layers -->
+    <div class="cyber-grid-bg"></div>
+    <div class="holo-overlay"></div>
+
+    <!-- Navigation Hub -->
+    <nav class="cyber-nav">
+        <div class="nav-brand">
+            <div class="brand-logo-container">
+                <img src="assets/logo.svg" alt="BLAST" id="main-logo">
+                <div class="logo-glow"></div>
+            </div>
+            <span class="brand-text">BLAST<span class="sub-text">.NETWORK</span></span>
+        </div>
+
+        <div class="nav-center-console">
+            <a href="#home" class="console-link active" data-i18n="nav_home" data-text="HOME">INICIO</a>
+            <a href="#ecosystem" class="console-link" data-i18n="nav_ecosystem" data-text="ECOSYSTEM">ECOSISTEMA</a>
+            <a href="#markets" class="console-link" data-i18n="nav_markets" data-text="MARKETS">MERCADOS</a>
+            <a href="#governance" class="console-link" data-i18n="nav_governance" data-text="GOVERNANCE">GOBERNANZA</a>
+            <a href="#referral" class="console-link" data-i18n="nav_referral" data-text="REFERRALS">REFERIDOS</a>
+        </div>
+
+        <div class="nav-actions">
+            <button id="lang-toggle" class="btn-cyber-gold" onclick="toggleLanguage()"
+                style="margin-right:10px; padding: 5px 10px; min-width:40px;">ES</button>
+            <a href="https://blastwallet.blast" class="btn-cyber-primary">
+                <span class="btn-content" data-i18n="btn_connect">CONNECT WALLET</span>
+                <span class="btn-glitch"></span>
+            </a>
+            <button class="menu-trigger" aria-label="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section: Mecha Interface -->
+        <section id="home" class="hero-mecha">
+            <div class="hero-bg-wrapper">
+                <img src="assets/hero_bg.svg" alt="Cyber Mecha" class="hero-image">
+                <div class="hero-vignette"></div>
+            </div>
+
+            <div class="hero-interface">
+                <div class="interface-panel left-panel fade-in-left">
+                    <h1 class="cyber-glitch" data-text="THE FUTURE IS">THE FUTURE IS<br><span
+                            class="gold-neon">IMMUTABLE</span></h1>
+                    <p class="hero-subtitle">Architecture specifically engineered for high-frequency decentralized
+                        finance and military-grade asset security.</p>
+
+                    <div class="access-terminal">
+                        <div class="terminal-header">User Access / Sign Up</div>
+                        <form class="terminal-form">
+                            <div class="input-group">
+                                <span class="input-icon">⚡</span>
+                                <input type="text" placeholder="Email / Neural ID">
+                                <div class="input-border"></div>
+                            </div>
+                            <button type="submit" class="btn-cyber-gold">INITIALIZE ACCESS</button>
+                        </form>
+                        <div class="terminal-status">
+                            <span class="status-dot blink"></span> SYSTEM OPERATIONAL
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interface-panel right-panel fade-in-right">
+                    <!-- Dynamic Stats Module -->
+                    <div class="stats-module glass-panel">
+                        <div class="module-header">NETWORK METRICS</div>
+                        <div class="stat-row">
+                            <span class="label">TPS</span>
+                            <span class="value counter" data-target="15000">0</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">BLOCK TIME</span>
+                            <span class="value">400ms</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="label">NODES</span>
+                            <span class="value counter" data-target="1240">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER 1: Mining -->
+        <div class="banner-wrapper">
+            <div class="promo-banner" onclick="location.href='#ecosystem'">
+                <div class="banner-particles"><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="banner-content">
+                    <span class="banner-icon">⛏️</span>
+                    <div class="banner-text">
+                        <h3 data-i18n="banner1_title">MINA BLAST — GANA CRIPTO HOY</h3>
+                        <p data-i18n="banner1_desc">Descarga el firmware para ESP32 y empieza a minar desde cualquier
+                            dispositivo IoT.</p>
+                    </div>
+                    <button class="banner-cta" data-i18n="banner1_cta">EMPEZAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Markets Section: Digital Dashboard -->
+        <section id="markets" class="markets-dashboard">
+            <div class="section-header">
+                <h2 class="section-title">LIVE <span class="gold-neon">MARKETS</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="market-grid-container glass-panel">
+                <div class="market-header-row">
+                    <span>ASSET</span>
+                    <span>PRICE</span>
+                    <span>24H CHANGE</span>
+                    <span>VOLUME</span>
+                    <span>ACTION</span>
+                </div>
+
+                <div class="market-row">
+                    <div class="asset-info">
+                        <img src="assets/logo.svg" class="coin-icon small">
+                        <span>BLAST</span>
+                    </div>
+                    <div class="price-info">$0.0420</div>
+                    <div class="change-info positive">+12.5%</div>
+                    <div class="vol-info">$4.2M</div>
+                    <div class="action-info"><button class="btn-trade">TRADE</button></div>
+                </div>
+
+                <div class="market-row">
+                    <div class="asset-info">
+                        <span class="coin-placeholder eth">Ξ</span>
+                        <span>ETH</span>
+                    </div>
+                    <div class="price-info">$3,450.00</div>
+                    <div class="change-info negative">-1.2%</div>
+                    <div class="vol-info">$12B</div>
+                    <div class="action-info"><button class="btn-trade">TRADE</button></div>
+                </div>
+
+                <div class="market-row">
+                    <div class="asset-info">
+                        <span class="coin-placeholder btc">₿</span>
+                        <span>BTC</span>
+                    </div>
+                    <div class="price-info">$68,500.00</div>
+                    <div class="change-info positive">+0.8%</div>
+                    <div class="vol-info">$24B</div>
+                    <div class="action-info"><button class="btn-trade">TRADE</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER 2: Referral Program -->
+        <div class="banner-wrapper">
+            <div class="promo-banner" onclick="location.href='#referral'">
+                <div class="banner-particles"><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="banner-content">
+                    <span class="banner-icon">👥</span>
+                    <div class="banner-text">
+                        <h3 data-i18n="banner2_title">INVITA AMIGOS — GANA HASTA 25%</h3>
+                        <p data-i18n="banner2_desc">Programa de referidos progresivo por niveles. Sube de nivel y
+                            desbloquea mayores recompensas.</p>
+                    </div>
+                    <button class="banner-cta" data-i18n="banner2_cta">VER PROGRAMA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ecosystem Grid: Hexagonal Layout -->
+        <section id="ecosystem" class="hex-ecosystem">
+            <div class="section-header">
+                <h2 class="section-title">CORE <span class="gold-neon">MODULES</span></h2>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Vault Card (Highlight) -->
+                <div class="cyber-card vault-card-premium">
+                    <div class="card-border-top"></div>
+                    <div class="card-content">
+                        <div class="card-icon">🔐</div>
+                        <h3>BLAST VAULT</h3>
+                        <p>Military-grade cold storage. Your keys, your fortress.</p>
+                        <div class="card-tech-specs">
+                            <span>CC EAL6+</span>
+                            <span>AIR-GAPPED</span>
+                        </div>
+                    </div>
+                    <div class="card-border-bottom"></div>
+                </div>
+
+                <div class="cyber-card">
+                    <div class="card-content">
+                        <div class="card-icon">🚀</div>
+                        <h3>BLAST PAD</h3>
+                        <p>Premier launchpad for verified ecosystem projects.</p>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <div class="card-content">
+                        <div class="card-icon">🎰</div>
+                        <h3>BLAST LOTTERY</h3>
+                        <p>Provably fair decentralized lottery. Win big.</p>
+                        <div class="card-tech-specs" style="justify-content: center;">
+                            <span class="gold-neon" style="font-size: 1.1em;">🏆 JACKPOT: <span
+                                    id="lottery-jackpot">0</span> BLAST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <div class="card-content">
+                        <div class="card-icon">⛏️</div>
+                        <h3>IOT MINING</h3>
+                        <p>Mine BLAST on ESP32/Arduino devices.</p>
+                        <a href="downloads/BlastMinerESP32.zip" class="btn-trade"
+                            style="margin-top:10px; display:inline-block; text-decoration:none;">DOWNLOAD FW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER 3: BLAST Vault -->
+        <div class="banner-wrapper">
+            <div class="promo-banner" onclick="location.href='#home'">
+                <div class="banner-particles"><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="banner-content">
+                    <span class="banner-icon">🛡️</span>
+                    <div class="banner-text">
+                        <h3 data-i18n="banner3_title">PROTEGE TUS ACTIVOS — BLAST VAULT</h3>
+                        <p data-i18n="banner3_desc">Seguridad militar con almacenamiento en frío. Tus llaves, tu
+                            fortaleza.</p>
+                    </div>
+                    <button class="banner-cta" data-i18n="banner3_cta">EXPLORAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- REFERRAL PROGRAM SECTION -->
+        <section id="referral" class="referral-section">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="ref_title">PROGRAMA DE <span class="gold-neon">REFERIDOS</span>
+                </h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="referral-grid">
+                <!-- Left: Level Tiers -->
+                <div class="levels-panel">
+                    <h3 data-i18n="ref_levels_title">NIVELES Y RECOMPENSAS</h3>
+
+                    <div class="level-tier">
+                        <div class="level-badge bronze">🥉</div>
+                        <div class="level-info">
+                            <span class="level-name bronze">BRONZE</span>
+                            <span class="level-detail" data-i18n="ref_lvl1_detail">Inicio — 0 referidos</span>
+                        </div>
+                        <span class="level-reward">5%</span>
+                    </div>
+
+                    <div class="level-tier">
+                        <div class="level-badge silver">🥈</div>
+                        <div class="level-info">
+                            <span class="level-name silver">SILVER</span>
+                            <span class="level-detail" data-i18n="ref_lvl2_detail">5+ referidos activos</span>
+                        </div>
+                        <span class="level-reward">8%</span>
+                    </div>
+
+                    <div class="level-tier">
+                        <div class="level-badge gold">🥇</div>
+                        <div class="level-info">
+                            <span class="level-name gold">GOLD</span>
+                            <span class="level-detail" data-i18n="ref_lvl3_detail">15+ referidos activos</span>
+                        </div>
+                        <span class="level-reward">12%</span>
+                    </div>
+
+                    <div class="level-tier">
+                        <div class="level-badge platinum">💎</div>
+                        <div class="level-info">
+                            <span class="level-name platinum">PLATINUM</span>
+                            <span class="level-detail" data-i18n="ref_lvl4_detail">50+ referidos activos</span>
+                        </div>
+                        <span class="level-reward">18%</span>
+                    </div>
+
+                    <div class="level-tier">
+                        <div class="level-badge diamond">👑</div>
+                        <div class="level-info">
+                            <span class="level-name diamond">DIAMOND</span>
+                            <span class="level-detail" data-i18n="ref_lvl5_detail">100+ referidos activos</span>
+                        </div>
+                        <span class="level-reward">25%</span>
+                    </div>
+
+                    <div class="level-progress">
+                        <div class="progress-header">
+                            <span data-i18n="ref_progress_label">Tu progreso</span>
+                            <span id="ref-progress-text">0 / 5</span>
+                        </div>
+                        <div class="progress-bar-track">
+                            <div class="progress-bar-fill" id="ref-progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Actions & Stats -->
+                <div class="referral-action-panel">
+                    <div class="referral-link-card">
+                        <h3 data-i18n="ref_link_title">TU ENLACE DE REFERIDO</h3>
+                        <div class="referral-link-box">
+                            <input type="text" id="referral-link-input" value="https://blast.network/?ref=XXXXXXXX"
+                                readonly aria-label="Referral link">
+                            <button class="btn-copy" id="btn-copy-ref" onclick="copyReferralLink()">📋</button>
+                        </div>
+                        <p class="referral-note" data-i18n="ref_note">💡 Tu referido recibe su recompensa cuando el
+                            nuevo usuario se registra y compra un mínimo de 10 BLAST.</p>
+                    </div>
+
+                    <div class="referral-stats-grid">
+                        <div class="ref-stat-card">
+                            <span class="stat-value" id="ref-total-invited">0</span>
+                            <span class="stat-label" data-i18n="ref_stat_invited">INVITADOS</span>
+                        </div>
+                        <div class="ref-stat-card">
+                            <span class="stat-value" id="ref-total-rewards">0</span>
+                            <span class="stat-label" data-i18n="ref_stat_rewards">BLAST GANADOS</span>
+                        </div>
+                        <div class="ref-stat-card">
+                            <span class="stat-value" id="ref-current-level">🥉</span>
+                            <span class="stat-label" data-i18n="ref_stat_level">TU NIVEL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span>BLAST NETWORK &copy; 2026</span>
+                <span class="system-status">● SYSTEM OPTIMAL</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">DOCS</a>
+                <a href="#">GITHUB</a>
+                <a href="#">TWITTER</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="ai_advisor.js"></script>
+
+    <!-- GLENIS IA WIDGET -->
+    <div id="glenis-chat-btn" onclick="toggleChat()">
+        <img src="assets/glenis_avatar.png" alt="Glenis IA">
+    </div>
+
+    <div id="glenis-chat-window">
+        <div class="chat-header">
+            <img src="assets/glenis_avatar.png" class="chat-avatar">
+            <div class="chat-title">
+                <h3>GLENIS IA</h3>
+                <span>● NEURAL ONLINE</span>
+            </div>
+            <button onclick="toggleChat()"
+                style="margin-left:auto; background:none; border:none; color:#f0b90b; cursor:pointer;">✖</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <!-- Messages injected here -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Pregunta sobre inversiones...">
+            <button class="chat-send-btn" onclick="sendChat()">➤</button>
+        </div>
+    </div>
+</body>
+
+</html>

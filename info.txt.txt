@@ -45,8 +45,8 @@ Crear un ecosistema blockchain autosuficiente que ofrezca:
 | **Tipo de Red** | Layer 1 - Blockchain Independiente |
 | **Consenso** | Proof of Work (PoW) + Proof of Stake (PoS) Híbrido |
 | **Suministro Máximo** | 42,000,000 BLAST |
-| **Creador/Fundador** | Eliecer Jose Depablos Miquilena |
-| **Contacto Oficial** | eliecerdepablos@gmail.com |
+| **Creador/Fundador** | Yozy Matmo Chigkito |
+| **Contacto Oficial** | yozymatmo@blast.network |
 
 ---
 
@@ -77,8 +77,8 @@ Crear un ecosistema blockchain autosuficiente que ofrezca:
     "network_id": 8888,
     "chain_id": 8888,
     "creator": {
-      "full_name": "Eliecer Jose Depablos Miquilena",
-      "email": "eliecerdepablos@gmail.com",
+      "full_name": "Yozy Matmo Chigkito",
+      "email": "yozymatmo@blast.network",
       "role": "Founder & Creator",
       "master_wallet": "0xBLAST0000000000000000000000000000000001",
       "registration_date": "2025-01-27T00:00:00.000Z",
@@ -90,7 +90,7 @@ Crear un ecosistema blockchain autosuficiente que ofrezca:
       "mining_reserve": 37800000,
       "master_wallet_allocation": 4200000
     },
-    "message": "BLAST Genesis Block - Created by Eliecer Jose Depablos Miquilena - The Beginning of a New Era in Blockchain Technology - January 27, 2025"
+    "message": "BLAST Genesis Block - Created by Yozy Matmo Chigkito - The Beginning of a New Era in Blockchain Technology - January 27, 2025"
   },
   "signature": {
     "algorithm": "ECDSA-secp256k1",
@@ -119,8 +119,8 @@ Crear un ecosistema blockchain autosuficiente que ofrezca:
     "blastNetwork": {
       "enabled": true,
       "version": "1.0.0",
-      "creator": "Eliecer Jose Depablos Miquilena",
-      "creatorEmail": "eliecerdepablos@gmail.com",
+      "creator": "Yozy Matmo Chigkito",
+      "creatorEmail": "yozymatmo@blast.network",
       "networkName": "BLAST",
       "symbol": "BLAST",
       "decimals": 18,
@@ -137,11 +137,11 @@ Crear un ecosistema blockchain autosuficiente que ofrezca:
   },
   "difficulty": "0x1",
   "gasLimit": "0x1C9C380",
-  "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000BLAST_GENESIS_BY_ELIECER_JOSE_DEPABLOS_MIQUILENA_eliecerdepablos@gmail.com0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000BLAST_GENESIS_BY_ELIECER_JOSE_DEPABLOS_MIQUILENA_yozymatmo@blast.network0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "alloc": {
     "0xBLAST0000000000000000000000000000000001": {
       "balance": "4200000000000000000000000",
-      "comment": "Master Wallet (10%) - Eliecer Jose Depablos Miquilena"
+      "comment": "Master Wallet (10%) - Yozy Matmo Chigkito"
     },
     "0xBLAST0000000000000000000000000000000002": {
       "balance": "37800000000000000000000000",
@@ -184,8 +184,8 @@ Crear un ecosistema blockchain autosuficiente que ofrezca:
 ║                                                                  ║
 ║  ┌─────────────────────────────────────────────────────────────┐ ║
 ║  │ CREADOR Y PROPIETARIO:                                      │ ║
-║  │ Nombre: Eliecer Jose Depablos Miquilena                     │ ║
-║  │ Email: eliecerdepablos@gmail.com                            │ ║
+║  │ Nombre: Yozy Matmo Chigkito                     │ ║
+║  │ Email: yozymatmo@blast.network                            │ ║
 ║  │ Wallet Madre: 0xBLAST0000000000000000000000000000000001      │ ║
 ║  └─────────────────────────────────────────────────────────────┘ ║
 ║                                                                  ║
@@ -978,8 +978,8 @@ def create_master_wallet():
     master_wallet = wallet_core.generate_master_wallet(
         password="SECURE_MASTER_PASSWORD",  # Debe cambiarse
         creator_info={
-            'name': 'Eliecer Jose Depablos Miquilena',
-            'email': 'eliecerdepablos@gmail.com'
+            'name': 'Yozy Matmo Chigkito',
+            'email': 'yozymatmo@blast.network'
         }
     )
     
@@ -1919,7 +1919,7 @@ class BlastEmail:
 ║  │  ─────────────────────────────────                          │  ║
 ║  │  Tipo: Plataforma Principal                                 │  ║
 ║  │  Propietario: 0xBLAST0000...0001                            │  ║
-║  │  (Eliecer Jose Depablos Miquilena)                          │  ║
+║  │  (Yozy Matmo Chigkito)                          │  ║
 ║  │  Estado: RESERVADO                                          │  ║
 ║  │  Expira: NUNCA                                              │  ║
 ║  │                                                             │  ║
@@ -1936,7 +1936,7 @@ class BlastEmail:
 ║  │  ─────────────────────────────────                          │  ║
 ║  │  Tipo: Wallet Oficial                                       │  ║
 ║  │  Propietario: 0xBLAST0000...0001                            │  ║
-║  │  (Eliecer Jose Depablos Miquilena)                          │  ║
+║  │  (Yozy Matmo Chigkito)                          │  ║
 ║  │  Estado: RESERVADO                                          │  ║
 ║  │  Expira: NUNCA                                              │  ║
 ║  │                                                             │  ║
@@ -2235,7 +2235,7 @@ func CreateGenesisBlock() *Block {
 		GasLimit:   30000000,
 		GasUsed:    0,
 		Miner:      "0xBLAST0000000000000000000000000000000001",
-		ExtraData:  []byte("BLAST Genesis Block - Created by Eliecer Jose Depablos Miquilena - eliecerdepablos@gmail.com"),
+		ExtraData:  []byte("BLAST Genesis Block - Created by Yozy Matmo Chigkito - yozymatmo@blast.network"),
 		Transactions: []Transaction{
 			{
 				Hash:  "0x0000000000000000000000000000000000000000000000000000000000000001",
@@ -2419,7 +2419,7 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 /**
  * @title BLAST Token
  * @dev Token nativo de BLAST Network
- * @author BLAST Network - Eliecer Jose Depablos Miquilena
+ * @author BLAST Network - Yozy Matmo Chigkito
  */
 contract BlastToken is ERC20, ERC20Burnable, Pausable, AccessControl {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
@@ -2432,8 +2432,8 @@ contract BlastToken is ERC20, ERC20Burnable, Pausable, AccessControl {
     address public constant MASTER_WALLET = 0xBLAST0000000000000000000000000000000001;
     
     // Información del creador
-    string public constant CREATOR_NAME = "Eliecer Jose Depablos Miquilena";
-    string public constant CREATOR_EMAIL = "eliecerdepablos@gmail.com";
+    string public constant CREATOR_NAME = "Yozy Matmo Chigkito";
+    string public constant CREATOR_EMAIL = "yozymatmo@blast.network";
     
     // Eventos
     event BlockMined(address indexed miner, uint256 reward, uint256 blockNumber);
@@ -2653,8 +2653,8 @@ output = "stdout"
 ║   Ha sido creada y diseñada por:                                             ║
 ║                                                                              ║
 ║   ╔════════════════════════════════════════════════════════════════════╗    ║
-║   ║  NOMBRE: Eliecer Jose Depablos Miquilena                           ║    ║
-║   ║  EMAIL: eliecerdepablos@gmail.com                                  ║    ║
+║   ║  NOMBRE: Yozy Matmo Chigkito                           ║    ║
+║   ║  EMAIL: yozymatmo@blast.network                                  ║    ║
 ║   ║  ROL: Fundador y Creador                                           ║    ║
 ║   ║  WALLET MADRE: 0xBLAST0000000000000000000000000000000001           ║    ║
 ║   ╚════════════════════════════════════════════════════════════════════╝    ║
@@ -2691,15 +2691,15 @@ output = "stdout"
 |---------|--------------|
 | **Website Principal** | https://blastpad.blast |
 | **Wallet Oficial** | https://blastwallet.blast |
-| **Creador** | eliecerdepablos@gmail.com |
+| **Creador** | yozymatmo@blast.network |
 | **Documentación** | https://docs.blast.network |
 | **Explorer** | https://explorer.blast.network |
 | **GitHub** | https://github.com/blast-network |
 
 ---
 
-**Documento creado para: Eliecer Jose Depablos Miquilena**
-**Email: eliecerdepablos@gmail.com**
+**Documento creado para: Yozy Matmo Chigkito**
+**Email: yozymatmo@blast.network**
 **Fecha: Enero 2025**
 **Versión: 1.0.0**
 

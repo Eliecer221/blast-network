@@ -1,8 +1,8 @@
 // ============================================
 // BLAST COLD WALLET - IMPLEMENTACIÓN COMPLETA
 // ============================================
-// Creador: Eliecer Jose Depablos Miquilena
-// Email: eliecerdepablos@gmail.com
+// Creador: Yozy Matmo Chigkito
+// Email: yozymatmo@blast.network
 // Red: BLAST Network (Chain ID: 8888)
 // ============================================
 
@@ -25,8 +25,8 @@ const BLAST_COLD_WALLET_CONFIG = {
     },
 
     creator: {
-        name: 'Eliecer Jose Depablos Miquilena',
-        email: 'eliecerdepablos@gmail.com',
+        name: 'Yozy Matmo Chigkito',
+        email: 'yozymatmo@blast.network',
         masterWallet: '0x0F45711A8AB6393A504157F1DF327CED7231987B'
     },
 

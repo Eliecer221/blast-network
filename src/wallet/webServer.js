@@ -38,7 +38,7 @@ app.post('/api/wallet/lock', (req, res) => { wallet.lock(); res.json({ success: 
 
 app.get('/api/wallet/info', (req, res) => res.json(wallet.hasWallet() ? wallet.getWalletInfo() : { error: 'No wallet' }));
 
-app.get('/api/balance', (req, res) => res.json({ 
+app.get('/api/balance', (req, res) => res.json({
     BLAST: wallet.getBalance('BLAST'),
     USDT: wallet.getBalance('USDT'),
     ETH: wallet.getBalance('ETH')
@@ -745,7 +745,7 @@ app.get('/', (req, res) => {
         </section>
         
         <footer>
-            <p>2026 BLAST NETWORK - CREATED BY ELIECER JOSE DEPABLOS MIQUILENA</p>
+            <p>2026 BLAST NETWORK - CREATED BY YOZY MATMO CHIGKITO</p>
             <p style="margin-top: 8px; font-size: 12px;">THE MOST SECURE WALLET IN THE MARKET</p>
         </footer>
     </div>

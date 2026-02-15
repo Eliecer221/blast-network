@@ -1,0 +1,18 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    <pattern id="hex-grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M50 0 L93.3 25 V75 L50 100 L6.7 75 V25 Z" fill="none" stroke="#ffd700" stroke-width="1" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+  <rect width="100%" height="100%" fill="url(#hex-grid)" />
+  
+  <!-- Abstract 'Mecha' Shapes -->
+  <path d="M0 800 L1920 600 V1080 H0 Z" fill="#000" opacity="0.5" />
+  <path d="M960 200 L1200 400 L960 600 L720 400 Z" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.2" />
+</svg>

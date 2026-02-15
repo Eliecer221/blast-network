@@ -23,21 +23,25 @@ npm install
 ## Comandos
 
 ### Iniciar Nodo RPC
+
 ```bash
 npm run rpc
 ```
 
 ### Crear Wallet
+
 ```bash
 npm run wallet
 ```
 
 ### Iniciar Minero
+
 ```bash
 npm run miner -- --wallet TU_DIRECCION --threads 8
 ```
 
 ### Iniciar Explorador
+
 ```bash
 npm run explorer
 ```
@@ -59,11 +63,12 @@ src/
 ## Configuración de Red
 
 ### Metamask
+
 - Network Name: BLAST Network
-- RPC URL: http://localhost:8545
+- RPC URL: <http://localhost:8545>
 - Chain ID: 8888
 - Symbol: BLAST
 
-## Creador
+## Author
 
-Eliecer Jose Depablos Miquilena
+Yozy Matmo Chigkito

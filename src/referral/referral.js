@@ -3,8 +3,8 @@
 // Progressive Level-Based Incentives
 // Rewards from burn pool (deflationary redirect)
 // ============================================
-// Creator: Eliecer Jose Depablos Miquilena
-// Email: eliecerdepablos@gmail.com
+// Creator: Yozy Matmo Chigkito
+// Email: yozymatmo@blast.network
 // ============================================
 
 const crypto = require('crypto');

@@ -23,7 +23,12 @@
     "cors": "^2.8.5",
     "helmet": "^7.1.0"
   },
-  "keywords": ["blockchain", "wallet", "crypto", "blast"],
-  "author": "Eliecer Jose Depablos Miquilena",
+  "keywords": [
+    "blockchain",
+    "wallet",
+    "crypto",
+    "blast"
+  ],
+  "author": "Yozy Matmo Chigkito",
   "license": "MIT"
 }

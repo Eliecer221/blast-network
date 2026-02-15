@@ -152,10 +152,11 @@ The BLAST Network is now fully defined and ready for official deployment.
 | **Documentation** | [docs.blast.network](https://docs.blast.network) |
 | **Block Explorer** | [explorer.blast.network](https://explorer.blast.network) |
 | **GitHub Repository** | [github.com/blast-network](https://github.com/blast-network) |
-| **Creator Contact** | [eliecerdepablos@gmail.com](mailto:eliecerdepablos@gmail.com) |
+| **Creator Contact** | [yozymatmo@blast.network](mailto:yozymatmo@blast.network) |
 
 ---
-**Document created for: Eliecer Jose Depablos Miquilena**
+**Document created for: Yozy Matmo Chigkito**
 **Version: 1.0.0**
-*Created by Eliecer Jose Depablos Miquilena*
+*Created by Yozy Matmo Chigkito*
 *Founder & Creator of BLAST Network*
+*Contact: <yozymatmo@blast.network>*

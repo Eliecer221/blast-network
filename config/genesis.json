@@ -14,8 +14,8 @@
     "blastNetwork": {
       "enabled": true,
       "version": "1.0.0",
-      "creator": "Eliecer Jose Depablos Miquilena",
-      "creatorEmail": "eliecerdepablos@gmail.com",
+      "creator": "Yozy Matmo Chigkito",
+      "creatorEmail": "yozymatmo@blast.network",
       "networkName": "BLAST",
       "symbol": "BLAST",
       "decimals": 18,
@@ -32,11 +32,11 @@
   },
   "difficulty": "0x1",
   "gasLimit": "0x1C9C380",
-  "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000BLAST_GENESIS_BY_ELIECER_JOSE_DEPABLOS_MIQUILENA_eliecerdepablos@gmail.com0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000BLAST_GENESIS_BY_YOZY_MATMO_CHIGKITO_yozymatmo@blast.network0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "alloc": {
     "0xBLAST0000000000000000000000000000000001": {
       "balance": "21000000000000000000000000",
-      "comment": "Master Wallet - Eliecer Jose Depablos Miquilena"
+      "comment": "Master Wallet - Yozy Matmo Chigkito"
     },
     "0xBLAST0000000000000000000000000000000002": {
       "balance": "0",

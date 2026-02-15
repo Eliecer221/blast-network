@@ -5,18 +5,18 @@ const DIST_DIR = path.join(__dirname, 'dist', 'BLAST_WALLET_PENDIVE');
 
 function createPortablePackage() {
     console.log('📦 CREANDO PAQUETE PORTABLE PARA PENDRIVE\n');
-    
+
     if (!fs.existsSync(path.join(DIST_DIR, '..'))) {
         fs.mkdirSync(path.join(DIST_DIR, '..'), { recursive: true });
     }
-    
+
     if (fs.existsSync(DIST_DIR)) {
         fs.rmSync(DIST_DIR, { recursive: true });
     }
-    
+
     fs.mkdirSync(DIST_DIR, { recursive: true });
     fs.mkdirSync(path.join(DIST_DIR, 'data'), { recursive: true });
-    
+
     const filesToCopy = [
         'package.json',
         'README.md',
@@ -30,24 +30,24 @@ function createPortablePackage() {
         'src/miner/index.js',
         'src/domains/registry.js'
     ];
-    
+
     console.log('📋 Copiando archivos...\n');
-    
+
     filesToCopy.forEach(file => {
         const src = path.join(__dirname, file);
         if (fs.existsSync(src)) {
             const dest = path.join(DIST_DIR, file);
             const destDir = path.dirname(dest);
-            
+
             if (!fs.existsSync(destDir)) {
                 fs.mkdirSync(destDir, { recursive: true });
             }
-            
+
             fs.copyFileSync(src, dest);
             console.log(`   ✓ ${file}`);
         }
     });
-    
+
     const packageJson = {
         name: "blast-wallet-portable",
         version: "1.0.0",
@@ -66,12 +66,12 @@ function createPortablePackage() {
             "uuid": "^9.0.1"
         }
     };
-    
+
     fs.writeFileSync(
         path.join(DIST_DIR, 'package.json'),
         JSON.stringify(packageJson, null, 2)
     );
-    
+
     const readme = `
 # 💎 BLAST WALLET - EDICIÓN PENDRIVE
 
@@ -156,11 +156,11 @@ npm install
 ---
 
 **BLAST NETWORK** - Blockchain Layer 1
-Creador: Eliecer Jose Depablos Miquilena
+Creador: Yozy Matmo Chigkito
 `;
 
     fs.writeFileSync(path.join(DIST_DIR, 'README.txt'), readme);
-    
+
     const batchFile = `
 @echo off
 chcp 65001 >nul
@@ -202,7 +202,7 @@ if "%opt%"=="3" node src\\rpc\\server.js
 `;
 
     fs.writeFileSync(path.join(DIST_DIR, 'BLAST-Wallet.bat'), batchFile);
-    
+
     const infoFile = `
 BLAST WALLET - INFORMACIÓN DE SEGURIDAD
 ========================================
@@ -233,7 +233,7 @@ EN CASO DE PÉRDIDA:
 `;
 
     fs.writeFileSync(path.join(DIST_DIR, 'INFO-SECURIDAD.txt'), infoFile);
-    
+
     console.log('\n✅ PAQUETE CREADO EN:');
     console.log(`   ${DIST_DIR}\n`);
     console.log('📂 Archivos creados:');

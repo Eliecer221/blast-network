@@ -1,0 +1,24 @@
+{
+  "blast-network.blast": {
+    "domain": "blast-network.blast",
+    "owner": "0x0F45711A8AB6393A504157F1DF327CED7231987B",
+    "registrar": "BlastDomainRegistry",
+    "registrationDate": "2026-02-15T13:17:41.491Z",
+    "expirationDate": "2027-02-15T13:17:41.492Z",
+    "transactionHash": "0xbd9481edfde365fd9396e4deb76b27498fb0b7d002ba61c6cdc80ad1c16210a9",
+    "blockNumber": 1,
+    "active": true,
+    "dns_records": {
+      "TXT": [
+        {
+          "host": "_github-pages-challenge-Eliecer221",
+          "value": "48d3d97c057b3831edefecf8ed3ffd",
+          "ttl": 3600,
+          "updatedAt": "2026-02-15T13:30:30.011Z"
+        }
+      ]
+    },
+    "lastUpdateTx": "0xd7e9374eecbc65a634dfc1fd31520716e18c6e5289af5bb4b19d3ef5d0b0d28e",
+    "lastUpdateBlock": 1
+  }
+}

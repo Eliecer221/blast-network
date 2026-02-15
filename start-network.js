@@ -11,64 +11,66 @@ console.log(`
 
 const services = [];
 let serviceCount = 0;
-const totalServices = 2;
+const totalServices = 3;
 
 function startService(name, command, args) {
     return new Promise((resolve) => {
         console.log(`\n📦 Iniciando ${name}...`);
-        
+
         const proc = spawn(command, args, {
             cwd: process.cwd(),
             stdio: ['ignore', 'pipe', 'pipe'],
             shell: true
         });
-        
+
         proc.stdout.on('data', (data) => {
             const output = data.toString();
             if (output.includes('BLAST') || output.includes('localhost')) {
                 console.log(`   ${output.trim()}`);
             }
         });
-        
+
         proc.stderr.on('data', (data) => {
             const output = data.toString();
             if (!output.includes('npm')) {
                 console.error(`   ⚠️ ${output.trim()}`);
             }
         });
-        
-        proc.on('spawn', () => {
-            console.log(`   ✅ ${name} iniciado`);
-            serviceCount++;
-            if (serviceCount === totalServices) {
-                setTimeout(resolve, 1000);
-            }
-        });
-        
+
+        console.log(`   ✅ ${name} iniciado`);
+        serviceCount++;
+        setTimeout(resolve, 1000);
+
         proc.on('error', (err) => {
             console.error(`   ❌ Error: ${err.message}`);
             resolve();
         });
-        
+
         services.push({ name, proc });
     });
 }
 
 async function startAll() {
     console.log('\n🎯 Starting BLAST Network Services...\n');
-    
+
     await startService(
         'BLAST Full Node (RPC)',
         'node',
         ['src/network/fullNode.js']
     );
-    
+
     await startService(
         'BLAST Wallet Web',
         'node',
         ['src/wallet/webServer.js']
     );
-    
+
+    await startService(
+        'BLAST Website (Mainnet)',
+        'node',
+        ['src/website/server.js']
+    );
+
     console.log(`
 ╔══════════════════════════════════════════════════════════════════════════╗
 ║                    ✅ TODOS LOS SERVICIOS INICIADOS                     ║
@@ -79,6 +81,9 @@ async function startAll() {
 ║                                                                          ║
 ║   💎 BLAST Wallet Web:                                                 ║
 ║      http://localhost:3000                                             ║
+║                                                                          ║
+║   🌍 BLAST Website:                                                    ║
+║      http://localhost:8080                                             ║
 ║                                                                          ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 
@@ -98,7 +103,7 @@ async function startAll() {
 
 🛑 Para detener todos los servicios presiona Ctrl+C
 `);
-    
+
     process.on('SIGINT', () => {
         console.log('\n\n🛑 Deteniendo servicios...');
         services.forEach(s => {

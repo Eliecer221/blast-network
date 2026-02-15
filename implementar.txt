@@ -9,8 +9,8 @@ SECCIÓN 1: DOMINIOS FUNDACIONALES RESERVADOS
 ### 1.1 DOMINIO: blastpad.blast
 
 **Información del propietario:**
-- Nombre completo: Eliecer Jose Depablos Miquilena
-- Email: eliecerdepablos@gmail.com
+- Nombre completo: Yozy Matmo Chigkito
+- Email: yozymatmo@blast.network
 - Wallet madre: 0xBLAST0000000000000000000000000000000001
 - Rol: Fundador y Creador de BLAST Network
 
@@ -80,8 +80,8 @@ SECCIÓN 1: DOMINIOS FUNDACIONALES RESERVADOS
 ### 1.2 DOMINIO: blastwallet.blast
 
 **Información del propietario:**
-- Nombre completo: Eliecer Jose Depablos Miquilena
-- Email: eliecerdepablos@gmail.com
+- Nombre completo: Yozy Matmo Chigkito
+- Email: yozymatmo@blast.network
 - Wallet madre: 0xBLAST0000000000000000000000000000000001
 - Rol: Fundador y Creador de BLAST Network
 
@@ -383,8 +383,8 @@ y tandien quiero que implementes una BLAST COLD WALLET
 // ============================================
 // BLAST COLD WALLET - IMPLEMENTACIÓN COMPLETA
 // ============================================
-// Creador: Eliecer Jose Depablos Miquilena
-// Email: eliecerdepablos@gmail.com
+// Creador: Yozy Matmo Chigkito
+// Email: yozymatmo@blast.network
 // Red: BLAST Network (Chain ID: 8888)
 // ============================================
 
@@ -407,8 +407,8 @@ const BLAST_COLD_WALLET_CONFIG = {
   },
   
   creator: {
-    name: 'Eliecer Jose Depablos Miquilena',
-    email: 'eliecerdepablos@gmail.com',
+    name: 'Yozy Matmo Chigkito',
+    email: 'yozymatmo@blast.network',
     masterWallet: '0xBLAST0000000000000000000000000000000001'
   },
   
@@ -1711,8 +1711,8 @@ console.log(`
 ║                                                                ║
 ║   Sistema completo de Hardware Wallet para BLAST Network      ║
 ║                                                                ║
-║   Creador: Eliecer Jose Depablos Miquilena                    ║
-║   Email: eliecerdepablos@gmail.com                           ║
+║   Creador: Yozy Matmo Chigkito                    ║
+║   Email: yozymatmo@blast.network                           ║
 ║   Red: BLAST Network (Chain ID: 8888)                        ║
 ║                                                                ║
 ║   Modelos disponibles:                                        ║
