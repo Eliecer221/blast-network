@@ -9,7 +9,5 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 3001
       - key: RECOVERY_WALLET
         value: 0xb559d5fe73e7d4205db83b01a8b5f349345378fb
