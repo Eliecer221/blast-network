@@ -4,11 +4,13 @@
   "description": "BLAST Network - Blockchain Layer 1 con PoW+PoS Híbrido",
   "main": "src/blockchain/index.js",
   "scripts": {
-    "start": "node src/blockchain/index.js",
+    "start": "node src/wallet/webServer.js",
+    "blockchain": "node src/blockchain/index.js",
     "wallet": "node src/wallet/cli.js",
     "miner": "node src/miner/index.js",
     "rpc": "node src/rpc/server.js",
     "explorer": "node src/explorer/server.js",
+    "dashboard": "cd src/dashboard && npm run dev",
     "test": "jest",
     "lint": "eslint src/",
     "build-wallets": "node generate-wallets.js"
