@@ -71,4 +71,4 @@ src/
 
 ## Author
 
-Yozy Matmo Chigkito
+Yozhy Matmo Shigkito
