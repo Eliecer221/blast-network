@@ -6,7 +6,7 @@ Blockchain Layer 1 con PoW + PoS Híbrido
 
 | Parámetro | Valor |
 |-----------|-------|
-| Chain ID | 8888 |
+| Chain ID | 334070 |
 | Símbolo | BLAST |
 | Decimales | 18 |
 | Suministro Máximo | 42,000,000 BLAST |
