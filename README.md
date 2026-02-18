@@ -66,7 +66,7 @@ src/
 
 - Network Name: BLAST Network
 - RPC URL: <http://localhost:8545>
-- Chain ID: 8888
+- Chain ID: 334070
 - Symbol: BLAST
 
 ## Author
